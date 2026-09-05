@@ -388,7 +388,7 @@
         box-shadow: 0 12px 28px rgba(46, 42, 36, 0.06);
         border: 1px solid var(--line);
       }
-      .initial-badge {
+      /* .initial-badge {
         width: 84px;
         height: 84px;
         margin: 0 auto 16px;
@@ -400,6 +400,27 @@
         justify-content: center;
         font-family: "Cormorant Garamond", serif;
         font-size: 2rem;
+      } */
+      .initial-badge {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: linear-gradient(155deg, var(--sage), var(--sage-deep));
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.2rem;
+      }
+      .initial-badge img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 15%; /* X% Y%: geser kiri/kanan lalu atas/bawah */
+        display: block; /* lebih kecil dari sebelumnya supaya badan ikut terlihat (setengah badan) */
       }
       .person h3 {
         font-size: 1.7rem;
@@ -794,7 +815,9 @@
 
         <div class="couple-grid">
           <div class="person">
-            <div class="initial-badge">S</div>
+            <div class="initial-badge">
+              <img src="W1.png" alt="Sintiya" />
+            </div>
             <h3>Sintiya Anjayani</h3>
             <div class="role">Putri Pertama</div>
             <p class="desc">
@@ -803,7 +826,9 @@
           </div>
           <div class="amp">&amp;</div>
           <div class="person">
-            <div class="initial-badge">S</div>
+            <div class="initial-badge">
+              <img src="P1.png" alt="Sintiya" />
+            </div>
             <h3>Sandi Setiawan</h3>
             <div class="role">Putra Kedua</div>
             <p class="desc">
